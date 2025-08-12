@@ -1,13 +1,16 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Hero from "@/components/landing/Hero";
+import Features from "@/components/landing/Features";
+import { SEO } from "@/components/shared/SEO";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <main className="min-h-screen py-10">
+      <SEO title="Prep Piper — AI Voice Interviews" description="Prep Piper is a modern, animated, and accessible AI voice interview platform." canonical="/" />
+      <div className="container space-y-16">
+        <Hero />
+        <Features />
       </div>
-    </div>
+    </main>
   );
 };
 
